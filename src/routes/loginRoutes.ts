@@ -70,7 +70,7 @@ router.get('/logout', (req: Request, res: Response) => {
 
 router.get('/protected', requireAuth, (req: Request, res: Response) => {
   res.send(`
-    <div>Welcome to the protected area dear user</div>
+    <div>Welcome to the protected area, dear user</div>
   `);
 });
 
